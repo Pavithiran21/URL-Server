@@ -178,7 +178,7 @@ const UserController = {
                 console.log(data)
                 let users = await User.findOne({ "_id": data.user_id })
                 if (users) {
-                    users.isActive = false
+                 
                     bcrypt.hash(req.body.password, salt, function (err, hash) {
                         users.password = hash
                         users.update_ts = Date.now()
