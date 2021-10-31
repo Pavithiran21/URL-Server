@@ -217,7 +217,7 @@ const UserController = {
 
                     if (users) {
                         let id = uuidv4()
-                        let url = process.env.BASE_URL + '/#/reset/' + users.id              
+                        let url = process.env.BASE_URL + '/reset/' + users.id              
                         users.password = null
                         users.isActive = true
                         users.save()
