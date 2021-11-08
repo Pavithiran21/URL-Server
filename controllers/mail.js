@@ -4,10 +4,10 @@ const mailSender={
      SendMail:async(emailObj)=>{
         var transporter = nodemailer.createTransport({
           host: "smtp.mailtrap.io",
-          port: 2525,
+          port: 587,
           auth: {
-            user: "0987bcd10d5bf2",
-            pass: "c1edae4a3d21d6"
+            user: "2ef6a64c87dcbc",
+            pass: "f639360e88c3fb"
           }
         });
           let info = await transporter.sendMail(emailObj);
